@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片上传</title>
+</head>
+<body>
+    <input id="img" type="file">
+    
+    <script>
+    var img = document.querySelector('#img');
+    img.addEventListener('change', function(e) {
+        // e.target.files[0]
+        // e.srcElement.files[0]
+        var file = e.srcElement;
+        var formData = new FormData();
+        formData.append('', '')
+    })
+    </script>
+</body>
+</html>
